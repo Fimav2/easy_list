@@ -33,5 +33,14 @@ void itc_even_parts_list(const vector <int> &mass, vector <int> &mass2){
     }return chechik;
 
  }
+int itc_sl_list(const vector <int> &mass){
+    int cetchik = 0;
+    for(int i = 0;i < mass.size()-1; i++)
+       if(mass[i] < mass[i+1])
+         cetchik++;
 
+return cetchik;
+
+
+}
  

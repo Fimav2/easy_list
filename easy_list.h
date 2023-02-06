@@ -8,4 +8,8 @@ void itc_even_parts_list(const vector <int> &mass, vector <int> &mass2);//2
 
  int itc_positive_list(const vector <int> &mass);//3
 
+ int itc_sl_list(const vector <int> &mass);//4
+
+
+
 #endif // EASY_LIST_H_INCLUDED

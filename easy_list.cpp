@@ -44,21 +44,12 @@ return cetchik;
 
 
 }
- 
-bool itc_same_parts_list(const vector <int> &mass){
+ bool itc_same_parts_list(const vector <int> &mass){//5
+    int kol = 0;
+    for(int i = 0; i < mass.size() - 1; i++)
+        if(mass[i] * mass[i+1] > 0)
+            return true;
 
-    int cetchik = 0;
-for (int i = 0; i < mass.size() -1 ; i++) {
-        if ((mass[i] >= 0 && mass[i+1] >= 0) || (mass[i] < 0 && mass[i+1] < 0)) {
-            cetchik++;
-        }
-        }
-    if(cetchik > 0){
-        return true;
-    }
-        else
-            {
     return false;
-        }
-    }
 
+}

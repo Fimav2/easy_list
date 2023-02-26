@@ -3,20 +3,18 @@
 #include "easy_list.h"
 using namespace std;
 
-
-
-
-void itc_rev_list(vector <int> &mass) {//6
-
-  int cetchik;
-  if(mass.size() > 0){
-    for (int i = 0; i <= mass.size() / 2; i++) {
-      cetchik = mass[i];
-      mass[i] = mass[mass.size() - 1 - i];
-      mass[mass.size() - 1 - i] = cetchik;
+void itc_rev_list(vector <int> &mass){//6
+    int c;
+    int N = mass.size();
+    for(int i = 0; i < N/2; i++){
+        c = mass[N - 1 -i];
+        mass[N -1 -i] = mass[i];
+        mass[i] = c;
     }
-  }
 }
+
+
+
 
 void itc_rev_par_list(vector <int> &mass) {//7
   int cetchik;

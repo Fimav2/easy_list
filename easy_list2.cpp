@@ -38,7 +38,7 @@ void itc_rev_par_list(vector <int> &mass){//7
 
 
 
-void itc_rshift_list(vector <int> &mass){//8
+void itc_lshift_list(vector <int> &mass){//8
     int N = mass.size();
      if(N > 0){
     int k = mass[0];

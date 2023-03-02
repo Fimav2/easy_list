@@ -48,3 +48,26 @@ void itc_lshift_list(vector <int> &mass){//8
     mass[N-1] = k;
 }
 }
+void itc_rshift_list(vector <int> &mass){//8.5
+    int N = mass.size();
+  if (N > 0){
+  int k = mass[N-1];
+  for(int i = N-1; i>0;i=i-1)
+  mass[i] = mass[i - 1];
+  mass[0] = k;
+}
+}
+void itc_super_shift_list(vector <int> &mass, int n){//9
+    int N = mass.size();
+
+    if(n >= 0){
+        itc_rshift_list(mass);
+    }
+    else{
+         itc_lshift_list(mass);
+
+
+
+    }
+
+}
